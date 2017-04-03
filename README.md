@@ -9,4 +9,6 @@ Platform/Tools : J2EE, JSP, Servlet, MySQL Server, Eclipse Galileo
 
 Please find detailed description in attached file "Proposal Clearance System.pdf".
 
+Please design the database using the attached file "pcsdb.sql".
+
 Please all sample snapshots in the project folder.
