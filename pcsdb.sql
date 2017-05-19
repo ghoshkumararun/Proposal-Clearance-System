@@ -2,7 +2,8 @@
 SQLyog Enterprise - MySQL GUI v7.02 
 MySQL - 5.5.15 : Database - pcsdb
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -24,6 +25,7 @@ CREATE TABLE `designation_master` (
   `Des_No` varchar(24) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
 /*Data for the table `designation_master` */
 
 insert  into `designation_master`(`Designation`,`Des_No`) values ('Database Administrator','1'),('Project Manager','1'),('Team Leader','2'),('Senior Software Engineer','3'),('Software Engineer','4');
@@ -41,6 +43,9 @@ CREATE TABLE `document_master` (
   `Description` varchar(20) DEFAULT NULL,
   `Date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE INDEX doc_index
+ON document_master (Document_ID);
 
 /*Data for the table `document_master` */
 
